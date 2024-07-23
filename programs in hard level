@@ -1,0 +1,20 @@
+public class DaysConverter {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number of days: ");
+        int days = input.nextInt();
+        int years = days / 365;
+        int weeks = (days % 365) / 7;
+        int remainingDays = (days % 365) % 7;
+       System.out.println("Years: " + years);
+        System.out.println("Weeks: " + weeks);
+        System.out.println("Days: " + remainingDays);
+        input.close();
+    }
+    }
+output    Enter the number of days: 31
+Years: 0
+Weeks: 4
+Days: 3
+
+
